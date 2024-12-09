@@ -2,23 +2,33 @@
 \author{Jont Allen}
 \begin{document}
 \begin{problem}
-    Explain why the function \texttt{isprime} returns \(1\) for prime numbers and \(0\) for non-prime numbers.
-    Use examples \(2\), \(3\), and \(4\) to illustrate this behavior.
-    \[
-    \text{isprime(2): } \answer{1}, \text{isprime(3): } \answer{1}, \text{isprime(4): } \answer{0}
-    \]
-    \begin{feedback}[correct]
-    The function \texttt{isprime(n)} returns \(1\) (true) if \(n\) is prime and \(0\) (false) if \(n\) is not. For example, \(2\) and \(3\) are prime numbers, so the function returns \(1\). For \(4\), which is not prime, the function returns \(0\).
-    \end{feedback}
-\end{problem}
+    Find the largest prime number $p_{\text{max}}$ that can be stored on an Intel 64-bit computer. 
+    \end{problem}
+    
+    \begin{problem}
+    Recall that the largest unsigned integer representable on a 64-bit system is $2^{64} - 1$. 
+    Use a prime-finding algorithm (e.g., in MATLAB or Python) to identify the largest prime within this range.
 
-\begin{problem}
-    Discuss the efficiency of \texttt{isprime} for large numbers. How does it compare to other prime-checking algorithms?
-    \[
-    \text{Provide an efficiency analysis.}
-    \]
+    The largest prime is $\answer{18446744073709551615}$.
     \begin{feedback}[correct]
-    The \texttt{isprime} function is efficient for moderately large numbers but may become slower for very large inputs. Other algorithms, such as the Miller-Rabin primality test, are faster for extremely large numbers due to their probabilistic nature.
+        The largest unsigned integer representable on a 64-bit system is $2^{64} - 1$, which equals $18,446,744,073,709,551,615$. 
+Using a prime-finding algorithm, the largest prime less than this value is $18,446,744,073,709,551,557$.
     \end{feedback}
-\end{problem}
+    \end{problem}
+    
+    \begin{problem}
+    Explain why $p_{\text{max}}$ is unique and discuss its significance in modern computing, 
+    particularly in cryptography and number theory.
+    \begin{multipleChoice}
+        \choice[correct]{I've thought about this.}
+        \choice{I have not thought about this.}
+    \end{multipleChoice}
+    \begin{feedback}[correct]
+$p_{\text{max}}$ is unique because it is the largest prime that fits within the range of a 64-bit unsigned integer. 
+In cryptography, large primes are crucial for generating secure keys in encryption algorithms like RSA. 
+Their uniqueness ensures deterministic behavior when generating prime-based keys.
+\end{feedback}
+
+
+    \end{problem}
 \end{document}

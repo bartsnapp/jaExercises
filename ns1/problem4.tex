@@ -1,25 +1,49 @@
 \documentclass{ximera}
 \author{Jont Allen}
 \begin{document}
-\begin{problem}
-    Use the MATLAB/Octave function \texttt{primes} to generate all prime numbers between \(1\) and \(10^6\).
-    Save the result in a vector \(x\) and create a histogram of these values using the command \texttt{hist(x)}.
+    A special notation called \texttt{floor} is used to round numbers down to the nearest integer. 
+    Using the floor function, denoted as $\lfloor x \rfloor$, compute the following:    
+    \begin{problem}
+    Compute $\lfloor 3.7 \rfloor$.
     \[
-    \text{Plot a histogram of the prime numbers.}
+        \lfloor 3.7 \rfloor = \answer{3}
     \]
     \begin{feedback}[correct]
-    The function \texttt{primes(10^6)} generates all prime numbers up to \(10^6\). Use the \texttt{hist()} function to visualize the distribution of these numbers.
+    The floor of $3.7$ is $3$, because the largest integer less than or equal to $3.7$ is $3$.
     \end{feedback}
-\end{problem}
+    \end{problem}
+    
+    \begin{problem}
+    Compute $\lfloor -2.5 \rfloor$.
+    \[
+        \lfloor -2.5 \rfloor = \answer{-3}
+    \]
+    \begin{feedback}[correct]
+    The floor of $-2.5$ is $-3$, because the largest integer less than or equal to $-2.5$ is $-3$.
+\end{feedback}
 
-\begin{problem}
-    Analyze the distribution of primes based on the histogram.
-    Discuss how the density of primes decreases as numbers grow larger.
+    \end{problem}
+    
+    \begin{problem}
+    Compute $\lfloor 0.9 \rfloor$.
     \[
-    \text{Provide an analysis of prime density.}
+        \lfloor 0.9 \rfloor= \answer{0}
     \]
     \begin{feedback}[correct]
-    The density of primes decreases logarithmically as the numbers increase, which aligns with the Prime Number Theorem.
-    \end{feedback}
-\end{problem}
+    The floor of $0.9$ is $0$, because the largest integer less than or equal to $0.9$ is $0$.
+\end{feedback}
+
+    \end{problem}
+    
+    \begin{problem}
+    Explain why $\lfloor x \rfloor \leq x$ for all real numbers $x$.
+    \begin{multipleChoice}
+        \choice[correct]{I've thought about this.}
+        \choice{I have not thought about this.}
+    \begin{feedback}[correct]
+    The floor function, $\lfloor x \rfloor$, is defined as the largest integer less than or equal to $x$. 
+    By definition, it cannot exceed $x$ since it is either equal to $x$ (if $x$ is an integer) or strictly less than $x$ (if $x$ is not an integer).
+\end{feedback}
+
+    \end{problem}
 \end{document}

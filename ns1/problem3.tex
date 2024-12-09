@@ -1,0 +1,48 @@
+\documentclass{ximera}
+\author{Jont Allen}
+\begin{document}
+\begin{problem}
+    Show that the prime number \(5\) may be factored into Gaussian primes. Hint: Consider \((m + ni)(m - ni)\).
+    \[
+    \answer{(2 + i)(2 - i)}
+    \]
+    \begin{feedback}[correct]
+    The Gaussian prime factorization of \(5\) is \((2 + i)(2 - i) = 4 + 1\).
+    \end{feedback}
+\end{problem}
+
+\begin{problem}
+    Use MATLAB/Octave to find the prime factors of \(123\), \(248\), \(1767\), and \(999,999\).
+    \[
+    \text{Factors of 123: } \answer{3, 41}
+    \]
+    \[
+    \text{Factors of 248: } \answer{2, 2, 2, 31}
+    \]
+    \[
+    \text{Factors of 1767: } \answer{3, 19, 31}
+    \]
+    \[
+    \text{Factors of 999,999: } \answer{3, 3, 3, 7, 11, 13, 37}
+    \]
+    \begin{feedback}[correct]
+    Use the \texttt{factor()} function in MATLAB/Octave to compute these results.
+    \end{feedback}
+\end{problem}
+
+\begin{problem}
+    Use \texttt{isprime} in MATLAB/Octave to check if \(2\), \(3\), and \(4\) are prime numbers.
+    \[
+    \text{isprime(2): } \answer{1}
+    \]
+    \[
+    \text{isprime(3): } \answer{1}
+    \]
+    \[
+    \text{isprime(4): } \answer{0}
+    \]
+    \begin{feedback}[correct]
+    The function returns \(1\) for prime numbers and \(0\) otherwise.
+    \end{feedback}
+\end{problem}
+\end{document}

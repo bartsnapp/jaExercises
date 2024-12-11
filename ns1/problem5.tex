@@ -3,6 +3,21 @@
 \begin{document}
 \begin{problem}
     Find the largest prime number $p_{\text{max}}$ that can be stored on an Intel 64-bit computer. 
+    \begin{multipleChoice}
+    \choice[correct]{I've done this.}
+    \choice{I have not done this.}
+    \end{multipleChoice}
+       \begin{hint} 
+       The largest positive integer is $2^53$ ; however, the largest unsigned integer that can be factored is at least $2^54$ . Note that this number
+is even, so at least $2$ is a factor. Thus taking out $2$ as a factor is $2 = 2 \cdot 253$, or twice the largest number. Explain the logic of your
+answer.
+\end{hint}
+\begin{hint} \texttt{help isprime()}.
+\end{hint}
+\begin{feedback}[correct]
+It is obvious that it is already factored by 54 factors of 2. By trial and error, I discovered that the largest integer that Octave
+can factor is $2^54 - 6 = 2 \cdot 2203 \cdot 5741 \cdot 712176643$.
+    \end{feedback}
     \end{problem}
     
     \begin{problem}
